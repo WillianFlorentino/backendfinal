@@ -1,4 +1,4 @@
-import Beneficiario from "../Modelo/Beneficiario";
+import Beneficiario from "../Modelo/Beneficiario.js";
 
 export default class BeneficiarioCtrl{
     

@@ -46,8 +46,8 @@ import Beneficiario from "./Modelo/Beneficiario.js";
 
 import express from "express";
 import rotaBeneficiario from "./Rotas/rotaBeneficiario.js";
-import cors from "cors"; 
-import rotaBeneficiario from "./Rotas/rotaBeneficiario.js";
+import cors from "cors"
+
 
 const host = '0.0.0.0';
 const porta = 3000; 
@@ -56,10 +56,11 @@ const app = express();
 app.use(cors({
     origin: '*'
 }));
+
 app.use(express.json()); 
 app.use(express.urlencoded({ extended: true})); 
 
-app.use('/beneficiario',rotaBeneficiario);
+app.use('/cadastroBeneficiario',rotaBeneficiario);
 app.listen(porta, host, () => {
     console.log(`Servidor rodando em http://${host}:${porta}`);
 });
